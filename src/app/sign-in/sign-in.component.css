@@ -1,0 +1,14 @@
+.signinform {
+    margin-left: 5vw;
+
+}
+.input {
+    background-color: darkgray;
+    outline: none;
+    font-size: 2vmin;
+    color: brown;
+}
+.inputtitle {
+    font-size: 2vmin;
+    color: brown;
+}

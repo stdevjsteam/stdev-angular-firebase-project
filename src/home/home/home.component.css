@@ -1,0 +1,52 @@
+.tableblock {
+    width: 100%;
+    
+}
+.datatable {
+    width: 100%;
+    border: none;
+    background-color: darkgray;
+}
+
+th {
+    background-color: #9f5f50;
+    font-size: 2vmin;
+}
+td {
+    background-color: #bf7f70;
+    font-size: 2vmin;
+    text-align: center;
+}
+.button {
+    cursor: pointer;
+    font-size: 2vmin;
+}
+.delete {
+    background-color: #ff5555;
+    font-size: 2vmin;
+    color: #282828;
+}
+.edit {
+    background-color: #ff9944;
+    font-size: 2vmin;
+    color: #282828;
+}
+.add {
+    background-color: #337733;
+    font-size: 2vmin;
+    color: #282828;
+    margin-top: 1vmin;
+    min-width: 10vmin;
+    max-width: 10vmin;
+    text-align: center;
+    border-radius: 20px;
+    padding: 1vmin 
+}
+input {
+    background-color: gray;
+    outline: none;
+    border: none;
+    font-size: 2vmin;
+    color: #920000;
+    text-align: center;
+}

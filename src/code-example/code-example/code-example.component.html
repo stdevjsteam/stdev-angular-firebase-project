@@ -1,0 +1,21 @@
+<div class="tableblock">
+    <table class="datatable">
+        <tr>
+            <th></th>
+            <th><input type="text" [(ngModel)]="stackSearch"></th>
+        </tr>
+        <tr>
+            <th class="url">Public Url</th>
+            <th>Stack</th>
+            <th class="edit">Edit</th>
+            <th class="delete">Delete</th>
+        </tr>
+        <tr *ngFor="let obj of data | codeExampleDataSearch : stackSearch">
+            <td>{{obj.data.purl}}</td>
+            <td>{{obj.data.stack | arrayDisplay}}</td>
+            <th class="edit button" (click)="edit(obj.id)">Edit</th>
+            <th class="delete button" (click)="delete(obj.id)">Delete</th>
+        </tr>
+    </table>
+    <div class="add button" [routerLink]="['add-edit']"><b>Add</b></div>
+</div>

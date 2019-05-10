@@ -1,0 +1,18 @@
+.form {
+    width: 50%;
+    margin-left: 25%;
+}
+.input {
+    background-color: darkgray;
+    color: brown;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-size: 2vmin;
+    width: 50%;
+    margin-left: 15%;
+}
+.inputtitle {
+    color: brown;
+    font-size: 2vmin;
+}

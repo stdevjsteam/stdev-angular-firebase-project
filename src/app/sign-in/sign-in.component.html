@@ -1,0 +1,9 @@
+<div class="signinform">
+    <form novalidate [formGroup]="form" (ngSubmit)='signIn()'>
+        <input type="text" class="input" formControlName="email"><i><b class="inputtitle"> Email</b></i>
+        <br><br>
+        <input type="text" class="input" formControlName="password"><i><b class="inputtitle"> Password</b></i>
+        <br><br>
+        <button class="input" [disabled]="form.invalid">Sign In</button>
+    </form>
+</div>

@@ -1,0 +1,8 @@
+<form class="form" novalidate [formGroup]="form">
+    <input type="text" class="input" formControlName="purl"><i class="inputtitle"><b> Public Url</b></i>
+    <br><br>
+    <input type="text" class="input" formControlName="stack"><i class="inputtitle"><b> Stack</b></i>
+    <br><br>
+    <button class="input" *ngIf="!id" [disabled]="form.invalid" (click)="add()">Add</button>
+    <button class="input" *ngIf="id" [disabled]="form.invalid" (click)="edit()">Edit</button>
+</form>

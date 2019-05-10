@@ -1,0 +1,14 @@
+<form class="form" novalidate [formGroup]="form">
+    <input type="text" class="input" formControlName="pname"><i class="inputtitle"><b> Project name</b></i>
+    <br><br>
+    <input type="text" class="input" formControlName="stack"><i class="inputtitle"><b> Stack</b></i>
+    <br><br>
+    <input type="text" class="input" formControlName="curl"><i class="inputtitle"><b> Codedbnb Url</b></i>
+    <br><br>
+    <input type="text" class="input" formControlName="lurl"><i class="inputtitle"><b> Live Url</b></i>
+    <br><br>
+    <input type="text" class="input" formControlName="createdby"><i class="inputtitle"><b> Created by</b></i>
+    <br><br>
+    <button class="input" *ngIf="!id" [disabled]="form.invalid" (click)="add()">Add</button>
+    <button class="input" *ngIf="id" [disabled]="form.invalid" (click)="edit()">Edit</button>
+</form>

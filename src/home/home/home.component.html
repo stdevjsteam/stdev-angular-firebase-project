@@ -1,0 +1,49 @@
+<div class="tableblock">
+    <table class="datatable">
+        <tr>
+            <th><input type="text" [(ngModel)]="pnameSearch"></th>
+            <th><input type="text" [(ngModel)]="stackSearch"></th>
+        </tr>
+        <tr>
+            <th>Project name</th>
+            <th>Stack</th>
+            <th>Codedbnb URL</th>
+            <th>Live URL</th>
+            <th>Created by</th>
+            <th class="edit">Edit</th>
+            <th class="delete">Delete</th>
+        </tr>
+        <tr *ngFor="let obj of data | homeDataSearch : pnameSearch : stackSearch">
+            <td>{{obj.data.pname}}</td>
+            <td>{{obj.data.stack | arrayDisplay}}</td>
+            <td>{{obj.data.curl}}</td>
+            <td>{{obj.data.lurl}}</td>
+            <td>{{obj.data.createdby}}</td>
+            <th class="edit button" (click)="edit(obj.id)">Edit</th>
+            <th class="delete button" (click)="delete(obj.id)">Delete</th>
+        </tr>
+    </table>
+    <div class="add button" [routerLink]="['add-edit']"><b>Add</b></div>
+</div>
+<!-- 
+            <th><input type="text" class="search" [(ngModel)]="search_param.pname"></th>
+            <th><input type="text" class="search" [(ngModel)]="search_param.stack"></th>
+        </tr>
+        <tr>
+            <th>Project name</th>
+            <th>Stack</th>
+            <th>Codedbnb url</th>
+            <th>Live url</th>
+            <th>Create by</th>
+        </tr>
+        <tr *ngFor="let obj of pdbServise.data | home : search_param.pname : search_param.stack">
+            <td>{{obj.payload.doc.data().pname}}</td>
+            <td>{{obj.payload.doc.data().stack | array_display}}</td>
+            <td>{{obj.payload.doc.data().curl}}</td>
+            <td>{{obj.payload.doc.data().lurl}}</td>
+            <td>{{obj.payload.doc.data().createby}}</td>
+            <td class="edite" (click)="editeClick(obj.payload.doc.id)">Edite</td>
+            <td class="delete" (click)="deleteClick(obj.payload.doc.id)">Delete</td>
+        </tr>
+    </table>
+ -->

@@ -1,0 +1,17 @@
+.routebutton {
+    background-color: darkgray;
+    color: brown;
+    font-size: 1vw;
+    margin-left: 2vw;
+    cursor: pointer;
+    padding: 0.2vw;
+}
+.signoutbutton {
+    background-color: darkgray;
+    color: brown;
+    font-size: 1vw;
+    margin-right: 2vw;
+    cursor: pointer;
+    padding: 0.2vw;
+    float: right
+}
